@@ -36,10 +36,10 @@ class ArticleService
     public function CreatArticleFromLink($link, $website)
     {
         if($link = 1) {
-            $DomTypeClass = sprintf("App\\Services\\DomType\\DomType".DomType::One);
+            $DomTypeClass = sprintf("App\\Services\\DomType".DomType::One);
         }
         if($link = 2) {
-            $DomTypeClass = sprintf("App\\Services\\DomType\\DomType".DomType::Two);
+            $DomTypeClass = sprintf("App\\Services\\DomType".DomType::Two);
         }
 
         $DomTypeStrategy  = new DomTypeStrategy(new $DomTypeClass);

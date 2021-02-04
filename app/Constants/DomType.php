@@ -6,6 +6,6 @@ namespace App\Constants;
 
 final class DomType
 {
-    const ONE   = "One";
-    const TWO   = "Two";
+    const ONE   = "DomTypeOne";
+    const TWO   = "DomTypeTwo";
 }
