@@ -44,7 +44,7 @@ class ArticleService
 
         $DomTypeStrategy  = new DomTypeStrategy(new $DomTypeClass);
 
-        $articles = $DomTypeStrategy->getArticlesFromLink($request['link']);
+        $articles = $DomTypeStrategy->collectArticlesDataFromLink($request['link']);
 
         $website->articles()->delete();
         $this->articleRepository->insertMany($articles);

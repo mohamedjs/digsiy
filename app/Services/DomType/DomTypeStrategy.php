@@ -26,13 +26,13 @@ class DomTypeStrategy
     }
 
     /**
-     * Method handleLink
+     * Method collectArticlesDataFromLink
      *
      * @param string $link
      *
      * @return array
      */
-    public function getArticlesFromLink($link): array
+    public function collectArticlesDataFromLink($link): array
     {
         return $this->domType->handle($link);
     }
