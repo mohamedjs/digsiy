@@ -66,6 +66,16 @@ class WebsiteController extends Controller implements FilterRequest
     }
 
     /**
+     * create
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function create(): Renderable
+    {
+        return view("admin.website.create");
+    }
+
+    /**
      * store
      *
      * @param  App\Http\Requests\WebsiteStoreFormRequest $request
@@ -75,20 +85,6 @@ class WebsiteController extends Controller implements FilterRequest
     {
         $website = $this->websiteStoreService->handle($request->validated());
         return response()->json(['data' => '' , 'status' => 'success' , 'message' => 'Website Added Successfully'], 204);
-    }
-
-    /**
-     * edit
-     *
-     * @param  App\Models\Website $website
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function edit(Website $website): Renderable
-    {
-        if(!$website) {
-        return response()->json(['status' => 'error' , 'data' => (object)[] , 'message' => 'Not ound Website'], 404);
-        }
-        return response()->json(['status' => 'success' , 'data' => new WebsiteResource($website) , 'message' => 'Get Website For Edit Success'], 200);
     }
 
     /**
@@ -114,17 +110,5 @@ class WebsiteController extends Controller implements FilterRequest
     {
         $website = $this->websiteRepository->find($id)->delete();
         return response()->json(['status' => 'success' , 'data' => (object)[] , 'message' => 'Delete Website SuccessFully'] ,201);
-    }
-
-    /**
-     * function that have all request that required to filter with it in website modul
-     *
-     * @return array
-     */
-    public function filterRequest(): array
-    {
-        return [
-            "" => ""
-        ];
     }
 }

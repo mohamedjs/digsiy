@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class PostUpdateRequest extends Request
+class WebsiteUpdateRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,8 @@ class PostUpdateRequest extends Request
     public function rules()
     {
        return [
-            'published_date' => 'required|date|after_or_equal:today',
-            'content_id' => 'required',
-            'active' => 'required',
-            'operator_id'=> 'required'
+            'name' => 'required|string|max:255',
+            'link' => 'required|url',
        ];
     }
 }

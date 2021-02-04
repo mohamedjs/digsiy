@@ -68,3 +68,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
  c. 
  4. Create article module  
  a. View all stored articles from the database (Article title- Article description - Article DOM - Created at - Article link- Website name) 
+
+https://www.mklat.com/category/technology/computer-internet/
+https://www.arabmediasociety.com/category/features/
