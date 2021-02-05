@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \Illuminate\Contracts\Support\Renderable as Renderable;
-use App\Http\Requests\Api\Admin\WebsiteUpdateFormRequest;
-use App\Http\Requests\Api\Admin\WebsiteStoreFormRequest;
+use Illuminate\Http\RedirectResponse as RedirectResponse;
+use App\Http\Requests\WebsiteStoreFormRequest;
 use App\Repositories\WebsiteRepository;
 use App\Services\WebsiteStoreService;
 use App\Services\WebsiteUpdateService;
 use App\Models\Website;
 
-class WebsiteController extends Controller implements FilterRequest
+class WebsiteController extends Controller
 {
     /**
      * websiteStoreService
@@ -59,10 +59,9 @@ class WebsiteController extends Controller implements FilterRequest
      */
     public function index(): Renderable
     {
-        $websites = $this->websiteRepository->filter($this->websiteFilters())
-                ->paginate(request('per_page', 10));
+        $websites = $this->websiteRepository->get();
 
-        return response()->json(['status' => 'success' , 'data' => new WebsiteCollection($websites) , 'message' => 'Get All Website'], 200);
+        return view("website.index", compact('websites'));
     }
 
     /**
@@ -72,43 +71,31 @@ class WebsiteController extends Controller implements FilterRequest
      */
     public function create(): Renderable
     {
-        return view("admin.website.create");
+        return view("website.create");
     }
 
     /**
      * store
      *
      * @param  App\Http\Requests\WebsiteStoreFormRequest $request
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @return Illuminate\Http\RedirectResponse
      */
-    public function store(WebsiteStoreFormRequest $request): Renderable
+    public function store(WebsiteStoreFormRequest $request): RedirectResponse
     {
         $website = $this->websiteStoreService->handle($request->validated());
-        return response()->json(['data' => '' , 'status' => 'success' , 'message' => 'Website Added Successfully'], 204);
+        return redirect(route("admin.websites.index"))->with("success", "Scraped Done");
     }
 
     /**
      * update
      *
-     * @param  App\Http\Requests\WebsiteUpdateFormRequest $request
-     * @param  App\Models\Website $website
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Models\Website $website
+     * @return Illuminate\Http\RedirectResponse
      */
-    public function update(WebsiteUpdateFormRequest $request,Website $website): Renderable
+    public function update(request $request,Website $website): RedirectResponse
     {
-        $website = $this->websiteUpdateService->handle($request->validated(),$website);
-        return response()->json(['status' => 'success' , 'data' => new WebsiteResource($website) , 'message' => 'Update Website SuccessFully'], 200);
-    }
-
-    /**
-     * destroy
-     *
-     * @param  int $id
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function destroy($id): Renderable
-    {
-        $website = $this->websiteRepository->find($id)->delete();
-        return response()->json(['status' => 'success' , 'data' => (object)[] , 'message' => 'Delete Website SuccessFully'] ,201);
+        $website = $this->websiteUpdateService->handle($request->all(), $website);
+        return back()->with("success","Scraped Done");
     }
 }

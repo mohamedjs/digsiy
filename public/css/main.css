@@ -1,0 +1,14 @@
+.sidebar {
+  border-right: 1px solid #eee;
+  width: 250px;
+  height: 500px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+
+@media (min-width: 250px) .ml-sm-auto, .mx-sm-auto {
+    margin-left: auto !important;
+}

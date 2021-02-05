@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Repositories\WebsiteRepository;
+use App\Models\Website;
 
 class WebsiteUpdateService
 {
@@ -31,7 +32,7 @@ class WebsiteUpdateService
     public function __construct(WebsiteRepository $websiteRepository, ArticleService $articleService)
     {
         $this->websiteRepository      = $websiteRepository;
-        $this->$articleService            = $articleService;
+        $this->articleService         = $articleService;
     }
 
     /**
@@ -45,9 +46,11 @@ class WebsiteUpdateService
      */
     public function handle($request, $website): Website
     {
+        $request['last_scraped_at'] = date("Y-m-d H:i:s");
+        
         $website = tap($website)->update($request);
 
-        $this->articleService->CreatArticleFromLink($request['link'],$website);
+        $this->articleService->CreatArticleFromLink($website->link, $website);
         
     	return $website;
     }

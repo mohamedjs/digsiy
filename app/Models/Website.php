@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Traits\LatestState;
@@ -33,9 +34,9 @@ class Website extends Model
     /**
      * Get the articles that belong to webite
      * 
-     * @return Illuminate\Database\Eloquent\Model
+     * @return Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function articles(): Model
+    public function articles(): HasMany
     {
         return $this->hasMany(Article::class);
     }

@@ -3,6 +3,10 @@
 namespace App\Services;
 
 use App\Repositories\ArticleRepository;
+use App\Services\DomType\DomTypeOne;
+use App\Services\DomType\DomTypeTwo;
+use App\Services\DomType\DomTypeStrategy;
+use App\Constants\DomType;
 use App\Models\Website;
 
 class ArticleService
@@ -22,7 +26,7 @@ class ArticleService
      */
     public function __construct(ArticleRepository $articleRepository)
     {
-        $this->articleRepository      = $articleRepository;
+        $this->articleRepository = $articleRepository;
     }
 
     /**
@@ -35,19 +39,19 @@ class ArticleService
      */
     public function CreatArticleFromLink($link, $website)
     {
-        if($link = 1) {
-            $DomTypeClass = sprintf("App\\Services\\DomType".DomType::One);
+        if(strpos($link ,"mklat") !== false) {
+            $DomTypeClass = sprintf("App\\Services\\DomType\\".DomType::ONE);
         }
-        if($link = 2) {
-            $DomTypeClass = sprintf("App\\Services\\DomType".DomType::Two);
+        if(strpos($link ,"arabmediasociety") !== false) {
+            $DomTypeClass = sprintf("App\\Services\\DomType\\".DomType::TWO);
         }
 
         $DomTypeStrategy  = new DomTypeStrategy(new $DomTypeClass);
 
-        $articles = $DomTypeStrategy->collectArticlesDataFromLink($request['link']);
+        $articles = $DomTypeStrategy->collectArticlesDataFromLink($link);
 
         $website->articles()->delete();
-        $this->articleRepository->insertMany($articles);
+        $website->articles()->createMany($articles);
     }
 
 }

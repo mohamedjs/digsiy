@@ -7,7 +7,7 @@ use \Illuminate\Contracts\Support\Renderable as Renderable;
 use App\Repositories\ArticleRepository;
 use App\Models\Article;
 
-class ArticleController extends Controller implements FilterRequest
+class ArticleController extends Controller
 {
     /**
      * articleRepository
@@ -25,31 +25,25 @@ class ArticleController extends Controller implements FilterRequest
      */
     public function __construct(ArticleRepository $articleRepository)
     {
-        $this->articleRepository     = $articleRepository  ;
+        $this->articleRepository = $articleRepository  ;
     }
 
     /**
      * get all article with paginate
      *
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(): Renderable
+    public function index(Request $request): Renderable
     {
-        $articles = $this->articleRepository->filter($this->articleFilters())
-                ->paginate(request('per_page', 10));
+        $articles = $this->articleRepository->query();
 
-        return response()->json(['status' => 'success' , 'data' => new ArticleCollection($articles) , 'message' => 'Get All Article'], 200);
-    }
+        if($request->filled("website_id")) {
+            $articles = $articles->where("website_id", $request->website_id);
+        }
 
-    /**
-     * destroy
-     *
-     * @param  int $id
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function destroy($id): Renderable
-    {
-        $article = $this->articleRepository->find($id)->delete();
-        return response()->json(['status' => 'success' , 'data' => (object)[] , 'message' => 'Delete Article SuccessFully'] ,201);
+        $articles = $articles->get();
+
+        return view("article.index", compact('articles'));
     }
 }

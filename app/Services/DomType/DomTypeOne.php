@@ -24,7 +24,7 @@ class DomTypeOne implements DomType
         {
             $data[$key]['title']       = $content->find('.post-title a')->innerHtml;
             $data[$key]['description'] = $content->find('.post-excerpt')->innerHtml;
-            $data[$key]['url']         = $content->find('.post-title a')->getAttribute("href");
+            $data[$key]['link']         = $content->find('.post-title a')->getAttribute("href");
             $data[$key]['dom']         = $content->outerHtml;
         }
         return $data;

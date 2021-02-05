@@ -14,7 +14,7 @@ class DomTypeTwo implements DomType
      *
      * @return array
      */
-    public function handle($url): array
+    public function handle($link): array
     {
         $dom = new Dom();
         $dom->loadFromUrl($link);
@@ -24,7 +24,7 @@ class DomTypeTwo implements DomType
         {
             $data[$key]['title']       = $content->find('.post-box-title a')->innerHtml;
             $data[$key]['description'] = $content->find('.entry p')->innerHtml;
-            $data[$key]['url']         = $content->find('.post-box-title a')->getAttribute("href");
+            $data[$key]['link']         = $content->find('.post-box-title a')->getAttribute("href");
             $data[$key]['dom']         = $content->outerHtml;
         }
         return $data;
