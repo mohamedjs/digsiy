@@ -60,14 +60,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-
- Create a websites module 
- a. View all stored websites that you scraped with your system ( Website name - Website link - Created at - Last  scraped at) 
- b. Beside each website in the stored websites add a button for update articles: this button will fire a trigger to your scraping system to re-scrape the website and get the new data. 
- c. 
- 4. Create article module  
- a. View all stored articles from the database (Article title- Article description - Article DOM - Created at - Article link- Website name) 
-
-https://www.mklat.com/category/technology/computer-internet/
-https://www.arabmediasociety.com/category/features/
