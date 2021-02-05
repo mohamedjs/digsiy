@@ -82,8 +82,13 @@ class WebsiteController extends Controller
      */
     public function store(WebsiteStoreFormRequest $request): RedirectResponse
     {
-        $website = $this->websiteStoreService->handle($request->validated());
-        return redirect(route("admin.websites.index"))->with("success", "Scraped Done");
+        try {
+            $website = $this->websiteStoreService->handle($request->validated());
+            return redirect(route("admin.websites.index"))->with("success", "Scraped Done");
+        } catch (\Throwable $e) {
+            \Log::error($e);
+             return redirect(route("admin.websites.index"))->with("error", "there is error when scraped website");
+        }
     }
 
     /**
@@ -95,7 +100,12 @@ class WebsiteController extends Controller
      */
     public function update(request $request,Website $website): RedirectResponse
     {
-        $website = $this->websiteUpdateService->handle($request->all(), $website);
-        return back()->with("success","Scraped Done");
+        try {
+            $website = $this->websiteUpdateService->handle($request->all(), $website);
+            return back()->with("success","Scraped Done");
+        } catch (\Throwable $e) {
+            \Log::error($e);
+             return redirect(route("admin.websites.index"))->with("error", "there is error when scraped website");
+        }
     }
 }
