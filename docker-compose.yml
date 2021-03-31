@@ -48,15 +48,14 @@ services:
     #restart: unless-stopped
     #tty: true
     ports:
-      - "${DB_PORT}:3306"
+      - "3308:3308"
     environment:
       MYSQL_DATABASE: laravel
       MYSQL_ROOT_PASSWORD: admin
-      MYSQL_USER: 'root'
-      MYSQL_PASSWORD: ''
     volumes:
       - dbdata:/var/lib/mysql/
-     # - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+      - ./docker/mysql:/var/lib/mysql-files
+      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
     networks:
       - appnet
 
@@ -65,9 +64,12 @@ services:
     container_name: phpmyadmin
     environment:
       PMA_HOST: db
-      PMA_PORT: ${DB_PORT}
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
     ports:
-      - "8080:80"
+      - "9090:80"
     depends_on:
       - db
 
