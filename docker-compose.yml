@@ -31,22 +31,9 @@ services:
     networks:
       - appnet
 
-  node:
-    build:
-      context: ./docker/node
-      dockerfile: Dockerfile
-    image: mohamedlavu/docker-node-latest:latest
-    container_name: node
-    volumes:
-      - ${APP_PATH}:${DOCUMENT_ROOT}
-    networks:
-      - appnet
-
   db:
     image: mysql:latest
     container_name: db
-    #restart: unless-stopped
-    #tty: true
     ports:
       - "3308:3308"
     environment:
@@ -63,19 +50,19 @@ services:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
     environment:
-      PMA_HOST: db
-      PMA_PORT: 3306
       PMA_ARBITRARY: 1
-      SERVICE_TAGS: dev
-      SERVICE_NAME: mysql
     ports:
       - "9090:80"
     depends_on:
       - db
+    networks:
+      - appnet
 
   redis:
     image: redis:latest
     container_name: redis
+    networks:
+      - appnet
 
 networks:
   appnet:
