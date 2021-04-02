@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Repositories\WebsiteRepository;
 use App\Models\Website;
+use App\Jobs\ScrapedJob;
 
 class WebsiteUpdateService
 {
@@ -50,7 +51,8 @@ class WebsiteUpdateService
         
         $website = tap($website)->update($request);
 
-        $this->articleService->CreatArticleFromLink($website->link, $website);
+        dispatch(new ScrapedJob($this->articleService, $website->link, $website));
+        // $this->articleService->CreatArticleFromLink($website->link, $website);
         
     	return $website;
     }
