@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y \
     locales \
     nodejs \
     npm \
+    redis-server \
+    supervisor \
     git \
     curl
 
@@ -24,7 +26,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN docker-php-ext-install pdo_mysql mysqli mbstring zip exif pcntl
 
 # install supervisor
-RUN apk update && apk add --no-cache supervisor
+# RUN apt-get update && apk add --no-cache supervisor
 
 # enable redis
 RUN pecl install -o -f redis \

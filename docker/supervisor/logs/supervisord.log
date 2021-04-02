@@ -1,0 +1,16 @@
+2021-04-02 02:14:09,990 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-02 02:14:13,176 INFO RPC interface 'supervisor' initialized
+2021-04-02 02:14:13,177 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-02 02:14:13,179 INFO daemonizing the supervisord process
+2021-04-02 02:14:13,190 INFO supervisord started with pid 12
+2021-04-02 02:15:29,431 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-02 02:15:30,481 INFO RPC interface 'supervisor' initialized
+2021-04-02 02:15:30,481 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-02 02:15:30,482 INFO daemonizing the supervisord process
+2021-04-02 02:15:30,503 INFO supervisord started with pid 10
+2021-04-02 02:20:44,001 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-02 02:20:45,566 INFO RPC interface 'supervisor' initialized
+2021-04-02 02:20:45,567 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-02 02:20:45,613 INFO supervisord started with pid 9
+2021-04-02 02:20:47,027 INFO spawned: 'laravel-worker_00' with pid 12
+2021-04-02 02:20:48,030 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
