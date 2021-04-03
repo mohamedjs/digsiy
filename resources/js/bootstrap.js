@@ -36,4 +36,10 @@ window.io = require('socket.io-client');
 window.Echo = new Echo({
     broadcaster: 'socket.io',
     host: window.location.hostname + ':6001'
+    // authEndpoint: '/custom/endpoint/auth'
+    // namespace: 'App.Events'
+    // wsHost: 'realtime-pusher.ably.io',
+    // wsPort: 443,
+    // disableStats: true,
+    // encrypted: true,
 });

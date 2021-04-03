@@ -12,8 +12,6 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libzip-dev \
     locales \
-    nodejs \
-    npm \
     redis-server \
     git \
     curl
@@ -36,7 +34,8 @@ RUN pecl install -o -f redis \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # install latest version node-js, npm
-RUN npm install -g npm@latest
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get install -y nodejs
 
 #install larave-echo-server
 #RUN npm install

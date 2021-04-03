@@ -10,6 +10,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use App\Services\ArticleService;
 use App\Models\Website;
+use App\Events\ScrappedMessageEvent;
 
 class ScrapedJob implements ShouldQueue
 {
@@ -20,21 +21,21 @@ class ScrapedJob implements ShouldQueue
      *
      * @var App\Services\ArticleService
      */
-    private $articleService;
+    private ArticleService $articleService;
 
     /**
      * webiste
      * 
      * @var App\Models\Website
      */
-    private $website;
+    private Website $website;
 
     /**
      * link
      * 
      * @var string
      */
-    private $link;
+    private string $link;
 
     /**
      * Create a new job instance.
@@ -60,4 +61,18 @@ class ScrapedJob implements ShouldQueue
     {
         $this->articleService->CreatArticleFromLink($this->link, $this->website);
     }
+
+     /**
+     * Handle a job failure.
+     *
+     * @param Exception $exception
+     *
+     * @return void
+     */
+    public function failed(\Throwable $exception)
+    {
+      \File::append(storage_path('logs') . '/' . basename(get_class($this)) . '.log', $exception->getMessage().PHP_EOL);
+      event(new ScrappedMessageEvent("failed", $exception->getMessage()));
+    }
+
 }

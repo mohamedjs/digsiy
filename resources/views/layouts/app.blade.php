@@ -9,9 +9,6 @@
 
     <title>{{ config('app.name', 'Website Scraped Tools') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -80,5 +77,14 @@
             @include("layouts.nav")
         </main>
     </div>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script type="text/javascript">
+        window.Echo.channel('scrpped-message-channel.{{ auth()->id() }}')
+         .listen('.scrpped-message-event', (data) => {
+            alert(data.message)
+        });
+    </script>
 </body>
 </html>
