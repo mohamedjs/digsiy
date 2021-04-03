@@ -36,6 +36,8 @@ services:
       context: ./docker/supervisor
       dockerfile: Dockerfile
     container_name: supervisor
+    volumes:
+      - ${APP_PATH}:${DOCUMENT_ROOT}
     networks:
       - appnet
 

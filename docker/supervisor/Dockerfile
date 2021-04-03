@@ -1,5 +1,6 @@
 # Install dependencies
 FROM ubuntu:16.04
+FROM php:8-fpm
 
 RUN apt-get update && apt-get install -y supervisor
 RUN mkdir -p /var/log/supervisor
