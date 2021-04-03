@@ -31,16 +31,6 @@ services:
     networks:
       - appnet
 
-  supervisor:
-    build:
-      context: ./docker/supervisor
-      dockerfile: Dockerfile
-    container_name: supervisor
-    volumes:
-      - ${APP_PATH}:${DOCUMENT_ROOT}
-    networks:
-      - appnet
-
   db:
     image: mysql:latest
     container_name: db

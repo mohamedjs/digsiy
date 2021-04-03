@@ -1,0 +1,21 @@
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+[03-Apr-2021 17:54:45] NOTICE: fpm is running, pid 10
+[03-Apr-2021 17:54:45] NOTICE: ready to handle connections
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+Could not open input file: /var/www/laravel/artisan
+[03-Apr-2021 18:19:50] NOTICE: Terminating ...
+[03-Apr-2021 18:19:50] NOTICE: exiting, bye-bye!
+[2021-04-03 18:25:14][lipyJzxBg1IOHsLuE9mRCzJWDpGZiEsT] Processing: App\Jobs\ScrapedJob
+[2021-04-03 18:25:25][lipyJzxBg1IOHsLuE9mRCzJWDpGZiEsT] Failed:     App\Jobs\ScrapedJob
+[2021-04-03 18:59:12][CgJKDLgdYr4BKRGQcE9f8gCr58yjpNJL] Processing: App\Jobs\ScrapedJob
+[2021-04-03 18:59:53][CgJKDLgdYr4BKRGQcE9f8gCr58yjpNJL] Processed:  App\Jobs\ScrapedJob

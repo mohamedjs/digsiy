@@ -16,3 +16,128 @@
 2021-04-03 13:45:13,896 INFO spawned: 'laravel-worker_00' with pid 10
 2021-04-03 13:45:14,898 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2021-04-03 13:49:13,650 INFO reaped unknown pid 52
+2021-04-03 17:42:42,378 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-03 17:42:42,657 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2021-04-03 17:42:43,072 INFO RPC interface 'supervisor' initialized
+2021-04-03 17:42:43,073 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-03 17:42:43,074 INFO supervisord started with pid 1
+2021-04-03 17:42:44,078 INFO spawned: 'laravel-worker_00' with pid 9
+2021-04-03 17:42:45,081 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 17:42:52,086 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:42:54,044 INFO spawned: 'laravel-worker_00' with pid 10
+2021-04-03 17:42:54,261 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:42:55,585 INFO spawned: 'laravel-worker_00' with pid 11
+2021-04-03 17:42:55,642 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:42:57,732 INFO spawned: 'laravel-worker_00' with pid 12
+2021-04-03 17:42:58,071 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:43:01,453 INFO spawned: 'laravel-worker_00' with pid 13
+2021-04-03 17:43:01,482 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:43:02,485 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2021-04-03 17:52:49,622 WARN received SIGQUIT indicating exit request
+2021-04-03 17:54:43,689 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-03 17:54:43,690 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2021-04-03 17:54:43,733 INFO RPC interface 'supervisor' initialized
+2021-04-03 17:54:43,734 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-03 17:54:43,735 INFO supervisord started with pid 1
+2021-04-03 17:54:44,778 INFO spawned: 'php-fpm_00' with pid 10
+2021-04-03 17:54:44,894 INFO spawned: 'laravel-worker_00' with pid 11
+2021-04-03 17:54:45,257 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:54:45,929 INFO success: php-fpm_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 17:54:47,185 INFO spawned: 'laravel-worker_00' with pid 14
+2021-04-03 17:54:47,256 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:54:49,345 INFO spawned: 'laravel-worker_00' with pid 15
+2021-04-03 17:54:49,387 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:54:52,442 INFO spawned: 'laravel-worker_00' with pid 16
+2021-04-03 17:54:52,476 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:54:53,478 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2021-04-03 17:55:11,485 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-03 17:55:11,486 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2021-04-03 17:55:11,971 INFO RPC interface 'supervisor' initialized
+2021-04-03 17:55:11,972 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-03 17:55:11,973 INFO supervisord started with pid 1
+2021-04-03 17:55:12,993 INFO spawned: 'redis-server_00' with pid 8
+2021-04-03 17:55:12,998 INFO spawned: 'php-fpm_00' with pid 9
+2021-04-03 17:55:13,005 INFO spawned: 'laravel-worker_00' with pid 10
+2021-04-03 17:55:13,191 INFO spawned: 'laravel-echo-server_00' with pid 11
+2021-04-03 17:55:13,800 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:55:14,751 INFO success: redis-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 17:55:14,751 INFO success: php-fpm_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 17:55:14,752 INFO success: laravel-echo-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 17:55:14,927 INFO spawned: 'laravel-worker_00' with pid 15
+2021-04-03 17:55:14,962 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:55:16,987 INFO spawned: 'laravel-worker_00' with pid 21
+2021-04-03 17:55:17,162 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:55:20,388 INFO spawned: 'laravel-worker_00' with pid 25
+2021-04-03 17:55:20,421 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-04-03 17:55:21,423 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2021-04-03 18:19:46,982 WARN received SIGQUIT indicating exit request
+2021-04-03 18:19:47,435 INFO waiting for redis-server_00, php-fpm_00, laravel-echo-server_00 to die
+2021-04-03 18:19:47,367 WARN received SIGQUIT indicating exit request
+2021-04-03 18:19:48,366 INFO waiting for php-fpm_00 to die
+2021-04-03 18:19:50,521 INFO waiting for redis-server_00, php-fpm_00, laravel-echo-server_00 to die
+2021-04-03 18:19:52,078 INFO waiting for php-fpm_00 to die
+2021-04-03 18:19:53,903 INFO waiting for redis-server_00, php-fpm_00, laravel-echo-server_00 to die
+2021-04-03 18:19:55,220 INFO waiting for php-fpm_00 to die
+2021-04-03 18:19:55,607 INFO stopped: laravel-echo-server_00 (exit status 0)
+2021-04-03 18:19:56,267 INFO stopped: php-fpm_00 (exit status 0)
+2021-04-03 18:19:56,983 INFO waiting for redis-server_00, php-fpm_00 to die
+2021-04-03 18:19:59,483 INFO stopped: php-fpm_00 (exit status 0)
+2021-04-03 18:20:00,909 INFO waiting for redis-server_00 to die
+2021-04-03 18:22:55,836 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-03 18:22:55,942 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2021-04-03 18:22:56,674 INFO RPC interface 'supervisor' initialized
+2021-04-03 18:22:56,674 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-03 18:22:56,675 INFO supervisord started with pid 1
+2021-04-03 18:22:57,737 INFO spawned: 'redis-server_00' with pid 9
+2021-04-03 18:22:57,742 INFO spawned: 'php-fpm_00' with pid 10
+2021-04-03 18:22:57,748 INFO spawned: 'laravel-worker_00' with pid 11
+2021-04-03 18:22:57,758 INFO spawned: 'laravel-echo-server_00' with pid 12
+2021-04-03 18:22:59,233 INFO success: redis-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:22:59,234 INFO success: php-fpm_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:22:59,234 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:22:59,235 INFO success: laravel-echo-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:26:06,147 WARN received SIGQUIT indicating exit request
+2021-04-03 18:26:06,151 INFO waiting for redis-server_00, php-fpm_00, laravel-worker_00, laravel-echo-server_00 to die
+2021-04-03 18:26:06,452 INFO stopped: laravel-echo-server_00 (exit status 0)
+2021-04-03 18:26:09,566 INFO waiting for redis-server_00, php-fpm_00, laravel-worker_00 to die
+2021-04-03 18:26:10,781 INFO stopped: laravel-worker_00 (exit status 0)
+2021-04-03 18:26:11,213 INFO stopped: php-fpm_00 (exit status 0)
+2021-04-03 18:26:11,641 INFO stopped: redis-server_00 (exit status 0)
+2021-04-03 18:27:31,341 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-03 18:27:31,342 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2021-04-03 18:27:31,895 INFO RPC interface 'supervisor' initialized
+2021-04-03 18:27:31,896 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-03 18:27:31,897 INFO supervisord started with pid 1
+2021-04-03 18:27:33,261 INFO spawned: 'redis-server_00' with pid 10
+2021-04-03 18:27:33,296 INFO spawned: 'php-fpm_00' with pid 11
+2021-04-03 18:27:33,301 INFO spawned: 'laravel-worker_00' with pid 12
+2021-04-03 18:27:33,307 INFO spawned: 'laravel-echo-server_00' with pid 13
+2021-04-03 18:27:34,006 INFO success: redis-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:27:35,052 INFO success: php-fpm_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:27:35,052 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:27:35,053 INFO success: laravel-echo-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:54:44,091 WARN received SIGQUIT indicating exit request
+2021-04-03 18:54:44,225 INFO waiting for redis-server_00, php-fpm_00, laravel-worker_00, laravel-echo-server_00 to die
+2021-04-03 18:54:44,411 INFO stopped: laravel-echo-server_00 (exit status 0)
+2021-04-03 18:54:45,203 INFO stopped: laravel-worker_00 (exit status 0)
+2021-04-03 18:54:45,697 INFO stopped: php-fpm_00 (exit status 0)
+2021-04-03 18:54:45,932 INFO stopped: redis-server_00 (exit status 0)
+2021-04-03 18:55:52,699 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-03 18:55:52,926 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2021-04-03 18:55:53,115 INFO RPC interface 'supervisor' initialized
+2021-04-03 18:55:53,157 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-03 18:55:53,158 INFO supervisord started with pid 1
+2021-04-03 18:55:54,167 INFO spawned: 'redis-server_00' with pid 10
+2021-04-03 18:55:54,173 INFO spawned: 'php-fpm_00' with pid 11
+2021-04-03 18:55:54,179 INFO spawned: 'laravel-worker_00' with pid 12
+2021-04-03 18:55:54,185 INFO spawned: 'laravel-echo-server_00' with pid 13
+2021-04-03 18:55:55,207 INFO success: redis-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:55:55,208 INFO success: php-fpm_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:55:55,208 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 18:55:55,209 INFO success: laravel-echo-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-03 19:13:06,260 WARN received SIGQUIT indicating exit request
+2021-04-03 19:13:08,451 INFO waiting for redis-server_00, php-fpm_00, laravel-worker_00, laravel-echo-server_00 to die
+2021-04-03 19:13:11,289 INFO waiting for redis-server_00, php-fpm_00, laravel-worker_00, laravel-echo-server_00 to die
+2021-04-03 19:13:15,119 INFO waiting for redis-server_00, php-fpm_00, laravel-worker_00, laravel-echo-server_00 to die
+2021-04-03 19:13:18,509 INFO waiting for redis-server_00, php-fpm_00, laravel-worker_00, laravel-echo-server_00 to die
+2021-04-03 19:13:21,733 INFO waiting for redis-server_00, php-fpm_00, laravel-worker_00, laravel-echo-server_00 to die

@@ -38,12 +38,24 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # install latest version node-js, npm
 RUN npm install -g npm@latest
 
+#install larave-echo-server
+#RUN npm install
+RUN npm install -g laravel-echo-server
+
 # install requiremnt that needed to make realtime app
 # RUN npm install -g laravel-echo-server
 # RUN npm --save laravel-echo socket.io-client
 # CMD ["laravel-echo-server init"]
 # CMD ["laravel-echo-server start"]
 
-# Expose port 9000 and start php-fpm server
+# install supervisor
+RUN apt-get update && apt-get install -y supervisor
+RUN mkdir -p /var/log/supervisor
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
 EXPOSE 9000
-CMD ["php-fpm"]
+CMD ["/usr/bin/supervisord"]
+
+# Expose port 9000 and start php-fpm server
+# EXPOSE 9000
+# CMD ["php-fpm"]
