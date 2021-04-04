@@ -43,7 +43,7 @@
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                            
+
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
@@ -79,10 +79,11 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script type="text/javascript">
-        window.Echo.channel('scrpped-message-channel.{{ auth()->id() }}')
-         .listen('.scrpped-message-event', (data) => {
+        Echo.channel('scrpped-message-channel')
+         .listen('.scrppedEvent', (data) => {
+             console.log(data);
             alert(data.message)
         });
     </script>

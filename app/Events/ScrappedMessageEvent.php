@@ -18,14 +18,14 @@ class ScrappedMessageEvent implements ShouldBroadcast
 
     /**
      * status
-     * 
+     *
      * @var string
      */
     public string $status;
 
     /**
      * message
-     * 
+     *
      * @var string
      */
     public string $message;
@@ -48,7 +48,7 @@ class ScrappedMessageEvent implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('scrpped-message-channel.'.auth()->id());
+        return new Channel('scrpped-message-channel');
     }
 
     /**
@@ -58,6 +58,6 @@ class ScrappedMessageEvent implements ShouldBroadcast
      */
     public function broadcastAs()
     {
-        return 'scrpped-message-event';
+        return 'scrppedEvent';
     }
 }

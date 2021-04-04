@@ -4,7 +4,7 @@ version: "3.3"
 
 services:
 
-  app:
+  nginx:
     build:
       context: ./docker/nginx
       dockerfile: Dockerfile
@@ -30,6 +30,11 @@ services:
       - ./docker/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
     networks:
       - appnet
+    ports:
+      - "6001:6001"
+      - "6379:6379"
+    depends_on:
+      - nginx
 
   db:
     image: mysql:latest
