@@ -5,102 +5,12 @@ version 1.6.2
 
 ⚠ Starting server in DEV mode...
 
-✔  Running at 0.0.0.0 on port 6001
+✔  Running at localhost on port 6001
 ✔  Channels are ready.
 ✔  Listening for http events...
 ✔  Listening for redis events...
 
 Server ready!
 
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrpped-message-event
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrpped-message-event
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at 0.0.0.0 on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrppedEvent
-Warning: Closing process 37 because you used the '--force' option.
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at 0.0.0.0 on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrppedEvent
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrppedEvent
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at 0.0.0.0 on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrppedEvent
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrppedEvent
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at 0.0.0.0 on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrppedEvent
-Warning: Closing process 36 because you used the '--force' option.
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at 0.0.0.0 on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrppedEvent
-Channel: websitescrapedtools_database_scrpped-message-channel
-Event: scrppedEvent
+Channel: websitescrapedtools_database_message
+Event: message

@@ -8,8 +8,6 @@ use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 
 class ScrappedMessageEvent implements ShouldBroadcast
@@ -48,7 +46,7 @@ class ScrappedMessageEvent implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new Channel('scrpped-message-channel');
+        return new Channel('message');
     }
 
     /**
@@ -58,6 +56,6 @@ class ScrappedMessageEvent implements ShouldBroadcast
      */
     public function broadcastAs()
     {
-        return 'scrppedEvent';
+        return 'message';
     }
 }

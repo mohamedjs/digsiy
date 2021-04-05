@@ -35,11 +35,19 @@ window.io = require('socket.io-client');
 
 window.Echo = new Echo({
     broadcaster: 'socket.io',
-    host: window.location.hostname + ':6001'
-        // authEndpoint: '/custom/endpoint/auth'
-        // namespace: 'App.Events'
-        // wsHost: 'realtime-pusher.ably.io',
-        // wsPort: 443,
-        // disableStats: true,
-        // encrypted: true,
+    host: window.location.hostname + ':6001',
+    // authEndpoint: '/custom/endpoint/auth'
+    // namespace: 'App.Events'
+    // wsHost: 'realtime-pusher.ably.io',
+    // wsPort: 443,
+    // disableStats: true,
+    // encrypted: true,
+    // cluster: 'eu',
+    // logToConsole: true
+    // auth: {
+    //     headers: {
+    //         /** I'm using access tokens to access  **/
+    //         Authorization: "Bearer " + Cookies.get('access_token')
+    //     }
+    // }
 });

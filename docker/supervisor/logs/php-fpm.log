@@ -1,55 +1,7 @@
-[04-Apr-2021 16:16:59] NOTICE: fpm is running, pid 10
-[04-Apr-2021 16:16:59] NOTICE: ready to handle connections
-172.23.0.3 -  04/Apr/2021:16:17:50 +0000 "GET /index.php" 200
-172.23.0.3 -  04/Apr/2021:16:18:08 +0000 "POST /index.php" 302
-172.23.0.3 -  04/Apr/2021:16:18:14 +0000 "GET /index.php" 200
-172.23.0.3 -  04/Apr/2021:16:21:12 +0000 "GET /index.php" 302
-172.23.0.3 -  04/Apr/2021:16:21:16 +0000 "GET /index.php" 200
-172.23.0.3 -  04/Apr/2021:16:21:41 +0000 "GET /index.php" 200
-172.23.0.3 -  04/Apr/2021:16:21:51 +0000 "POST /index.php" 302
-172.23.0.3 -  04/Apr/2021:16:21:54 +0000 "GET /index.php" 200
-[04-Apr-2021 16:23:17] NOTICE: Terminating ...
-[04-Apr-2021 16:23:17] NOTICE: exiting, bye-bye!
-[04-Apr-2021 16:24:16] NOTICE: fpm is running, pid 11
-[04-Apr-2021 16:24:16] NOTICE: ready to handle connections
-172.24.0.3 -  04/Apr/2021:16:24:31 +0000 "GET /index.php" 200
-172.24.0.3 -  04/Apr/2021:16:24:32 +0000 "GET /index.php" 200
-172.24.0.3 -  04/Apr/2021:16:24:41 +0000 "POST /index.php" 302
-172.24.0.3 -  04/Apr/2021:16:24:46 +0000 "GET /index.php" 200
-172.24.0.3 -  04/Apr/2021:16:29:31 +0000 "GET /index.php" 200
-172.24.0.3 -  04/Apr/2021:16:29:41 +0000 "POST /index.php" 302
-172.24.0.3 -  04/Apr/2021:16:29:47 +0000 "GET /index.php" 200
-172.24.0.3 -  04/Apr/2021:16:31:36 +0000 "GET /index.php" 403
-172.24.0.3 -  04/Apr/2021:16:32:14 +0000 "POST /index.php" 302
-172.24.0.3 -  04/Apr/2021:16:32:19 +0000 "GET /index.php" 200
-[04-Apr-2021 16:36:06] NOTICE: Terminating ...
-[04-Apr-2021 16:36:06] NOTICE: exiting, bye-bye!
-[04-Apr-2021 16:36:52] NOTICE: fpm is running, pid 10
-[04-Apr-2021 16:36:52] NOTICE: ready to handle connections
-172.25.0.3 -  04/Apr/2021:16:37:09 +0000 "GET /index.php" 200
-172.25.0.3 -  04/Apr/2021:16:37:12 +0000 "GET /index.php" 302
-172.25.0.3 -  04/Apr/2021:16:37:16 +0000 "GET /index.php" 200
-172.25.0.3 -  04/Apr/2021:16:37:23 +0000 "GET /index.php" 200
-172.25.0.3 -  04/Apr/2021:16:37:33 +0000 "POST /index.php" 302
-172.25.0.3 -  04/Apr/2021:16:37:37 +0000 "GET /index.php" 200
-172.25.0.3 -  04/Apr/2021:16:39:46 +0000 "GET /index.php" 200
-172.25.0.3 -  04/Apr/2021:16:39:54 +0000 "POST /index.php" 302
-172.25.0.3 -  04/Apr/2021:16:40:00 +0000 "GET /index.php" 200
-[04-Apr-2021 16:42:35] NOTICE: Terminating ...
-[04-Apr-2021 16:42:35] NOTICE: exiting, bye-bye!
-[04-Apr-2021 16:43:12] NOTICE: fpm is running, pid 11
-[04-Apr-2021 16:43:12] NOTICE: ready to handle connections
-172.26.0.3 -  04/Apr/2021:16:43:46 +0000 "GET /index.php" 200
-172.26.0.3 -  04/Apr/2021:16:44:11 +0000 "POST /index.php" 302
-172.26.0.3 -  04/Apr/2021:16:44:17 +0000 "GET /index.php" 200
-172.26.0.3 -  04/Apr/2021:16:51:45 +0000 "GET /index.php" 200
-172.26.0.3 -  04/Apr/2021:16:52:10 +0000 "POST /index.php" 302
-172.26.0.3 -  04/Apr/2021:16:52:16 +0000 "GET /index.php" 200
-172.26.0.3 -  04/Apr/2021:16:53:08 +0000 "GET /index.php" 302
-172.26.0.3 -  04/Apr/2021:16:53:10 +0000 "GET /index.php" 200
-172.26.0.3 -  04/Apr/2021:16:53:29 +0000 "POST /index.php" 302
-172.26.0.3 -  04/Apr/2021:16:53:32 +0000 "GET /index.php" 200
-172.26.0.3 -  04/Apr/2021:16:53:41 +0000 "POST /index.php" 302
-172.26.0.3 -  04/Apr/2021:16:53:47 +0000 "GET /index.php" 200
-[04-Apr-2021 16:56:09] NOTICE: Terminating ...
-[04-Apr-2021 16:56:09] NOTICE: exiting, bye-bye!
+[05-Apr-2021 14:11:00] NOTICE: fpm is running, pid 10
+[05-Apr-2021 14:11:00] NOTICE: ready to handle connections
+172.31.0.3 -  05/Apr/2021:14:11:03 +0000 "GET /index.php" 200
+172.31.0.3 -  05/Apr/2021:14:16:53 +0000 "POST /index.php" 302
+172.31.0.3 -  05/Apr/2021:14:16:59 +0000 "GET /index.php" 200
+[05-Apr-2021 15:33:23] NOTICE: Terminating ...
+[05-Apr-2021 15:33:23] NOTICE: exiting, bye-bye!

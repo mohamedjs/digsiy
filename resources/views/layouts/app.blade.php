@@ -79,10 +79,11 @@
     </div>
 
     <!-- Scripts -->
+
     <script src="{{ asset('js/app.js') }}"></script>
     <script type="text/javascript">
-        Echo.channel('scrpped-message-channel')
-         .listen('.scrppedEvent', (data) => {
+        Echo.channel('message')
+         .listen('ScrappedMessageEvent', (data) => {
              console.log(data);
             alert(data.message)
         });
