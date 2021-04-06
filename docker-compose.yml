@@ -31,11 +31,12 @@ services:
     networks:
       - appnet
     ports:
-      - "6001:6001"
-      - "6379:6379"
+      - 6379:6379
+      - 6001:6001
+    environment:
+      - REDIS_REPLICATION_MODE=master
     depends_on:
       - nginx
-
   db:
     image: mysql:latest
     container_name: db

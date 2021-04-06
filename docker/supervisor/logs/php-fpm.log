@@ -1,7 +1,65 @@
-[05-Apr-2021 14:11:00] NOTICE: fpm is running, pid 10
-[05-Apr-2021 14:11:00] NOTICE: ready to handle connections
-172.31.0.3 -  05/Apr/2021:14:11:03 +0000 "GET /index.php" 200
-172.31.0.3 -  05/Apr/2021:14:16:53 +0000 "POST /index.php" 302
-172.31.0.3 -  05/Apr/2021:14:16:59 +0000 "GET /index.php" 200
-[05-Apr-2021 15:33:23] NOTICE: Terminating ...
-[05-Apr-2021 15:33:23] NOTICE: exiting, bye-bye!
+[06-Apr-2021 16:33:18] NOTICE: fpm is running, pid 10
+[06-Apr-2021 16:33:18] NOTICE: ready to handle connections
+[06-Apr-2021 16:35:11] NOTICE: Terminating ...
+[06-Apr-2021 16:35:11] NOTICE: exiting, bye-bye!
+[06-Apr-2021 16:35:53] NOTICE: fpm is running, pid 10
+[06-Apr-2021 16:35:53] NOTICE: ready to handle connections
+[06-Apr-2021 16:42:11] NOTICE: Terminating ...
+[06-Apr-2021 16:42:11] NOTICE: exiting, bye-bye!
+[06-Apr-2021 16:43:02] NOTICE: fpm is running, pid 10
+[06-Apr-2021 16:43:02] NOTICE: ready to handle connections
+[06-Apr-2021 16:44:21] NOTICE: Terminating ...
+[06-Apr-2021 16:44:21] NOTICE: exiting, bye-bye!
+[06-Apr-2021 16:45:02] NOTICE: fpm is running, pid 11
+[06-Apr-2021 16:45:02] NOTICE: ready to handle connections
+[06-Apr-2021 16:48:12] NOTICE: Terminating ...
+[06-Apr-2021 16:48:12] NOTICE: exiting, bye-bye!
+[06-Apr-2021 16:48:54] NOTICE: fpm is running, pid 10
+[06-Apr-2021 16:48:54] NOTICE: ready to handle connections
+[06-Apr-2021 17:00:12] NOTICE: Terminating ...
+[06-Apr-2021 17:00:12] NOTICE: exiting, bye-bye!
+[06-Apr-2021 17:00:59] NOTICE: fpm is running, pid 11
+[06-Apr-2021 17:00:59] NOTICE: ready to handle connections
+192.168.0.2 -  06/Apr/2021:17:02:57 +0000 "GET /index.php" 200
+192.168.0.2 -  06/Apr/2021:17:03:05 +0000 "POST /index.php" 302
+192.168.0.2 -  06/Apr/2021:17:03:11 +0000 "GET /index.php" 200
+[06-Apr-2021 17:05:27] NOTICE: Terminating ...
+[06-Apr-2021 17:05:27] NOTICE: exiting, bye-bye!
+[06-Apr-2021 17:06:29] NOTICE: fpm is running, pid 10
+[06-Apr-2021 17:06:29] NOTICE: ready to handle connections
+192.168.16.3 -  06/Apr/2021:17:06:31 +0000 "GET /index.php" 200
+192.168.16.3 -  06/Apr/2021:17:09:15 +0000 "POST /index.php" 302
+192.168.16.3 -  06/Apr/2021:17:09:21 +0000 "GET /index.php" 200
+192.168.16.3 -  06/Apr/2021:17:12:18 +0000 "GET /index.php" 200
+192.168.16.3 -  06/Apr/2021:17:12:42 +0000 "GET /index.php" 200
+192.168.16.3 -  06/Apr/2021:17:12:38 +0000 "POST /index.php" 302
+192.168.16.3 -  06/Apr/2021:17:12:43 +0000 "GET /index.php" 200
+192.168.16.3 -  06/Apr/2021:17:13:48 +0000 "POST /index.php" 302
+192.168.16.3 -  06/Apr/2021:17:13:54 +0000 "GET /index.php" 200
+192.168.16.3 -  06/Apr/2021:17:19:48 +0000 "GET /index.php" 200
+[06-Apr-2021 17:21:28] NOTICE: Terminating ...
+[06-Apr-2021 17:21:28] NOTICE: exiting, bye-bye!
+[06-Apr-2021 17:28:01] NOTICE: fpm is running, pid 10
+[06-Apr-2021 17:28:01] NOTICE: ready to handle connections
+[06-Apr-2021 17:29:19] NOTICE: Terminating ...
+[06-Apr-2021 17:29:19] NOTICE: exiting, bye-bye!
+[06-Apr-2021 17:36:16] NOTICE: fpm is running, pid 10
+[06-Apr-2021 17:36:16] NOTICE: ready to handle connections
+[06-Apr-2021 17:38:35] NOTICE: Terminating ...
+[06-Apr-2021 17:38:35] NOTICE: exiting, bye-bye!
+[06-Apr-2021 17:45:12] NOTICE: fpm is running, pid 11
+[06-Apr-2021 17:45:12] NOTICE: ready to handle connections
+192.168.80.2 -  06/Apr/2021:17:45:17 +0000 "GET /index.php" 302
+192.168.80.2 -  06/Apr/2021:17:45:21 +0000 "GET /index.php" 200
+192.168.80.2 -  06/Apr/2021:17:45:45 +0000 "GET /index.php" 200
+192.168.80.2 -  06/Apr/2021:17:45:54 +0000 "POST /index.php" 302
+192.168.80.2 -  06/Apr/2021:17:45:57 +0000 "GET /index.php" 200
+192.168.80.2 -  06/Apr/2021:17:48:22 +0000 "GET /index.php" 200
+192.168.80.2 -  06/Apr/2021:17:48:30 +0000 "POST /index.php" 302
+192.168.80.2 -  06/Apr/2021:17:48:37 +0000 "GET /index.php" 200
+192.168.80.2 -  06/Apr/2021:17:49:00 +0000 "GET /index.php" 200
+192.168.80.2 -  06/Apr/2021:17:49:06 +0000 "POST /index.php" 302
+192.168.80.2 -  06/Apr/2021:17:49:10 +0000 "GET /index.php" 200
+192.168.80.2 -  06/Apr/2021:17:52:46 +0000 "GET /index.php" 200
+[06-Apr-2021 17:52:59] NOTICE: Terminating ...
+[06-Apr-2021 17:52:59] NOTICE: exiting, bye-bye!

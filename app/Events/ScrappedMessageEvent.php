@@ -7,6 +7,7 @@ use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
+use Illuminate\Contracts\Broadcasting\ShouldBroadcastNow;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
@@ -19,21 +20,21 @@ class ScrappedMessageEvent implements ShouldBroadcast
      *
      * @var string
      */
-    public string $status;
+    public $status;
 
     /**
      * message
      *
      * @var string
      */
-    public string $message;
+    public $message;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(string $status, string $message)
+    public function __construct($status, $message)
     {
         $this->message = $message;
         $this->status  = $status;
@@ -46,7 +47,7 @@ class ScrappedMessageEvent implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new Channel('message');
+        return new Channel('scrappedMessage');
     }
 
     /**
@@ -54,8 +55,8 @@ class ScrappedMessageEvent implements ShouldBroadcast
      *
      * @return string
      */
-    public function broadcastAs()
-    {
-        return 'message';
-    }
+    // public function broadcastAs()
+    // {
+    //     return 'message';
+    // }
 }

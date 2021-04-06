@@ -16,6 +16,10 @@ RUN apt-get update && apt-get install -y \
     git \
     curl
 
+# redis config
+COPY redis.conf /etc/redis/redis.conf.default
+COPY redis.conf /etc/redis/redis.conf
+
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -46,6 +50,7 @@ RUN npm install -g laravel-echo-server
 # RUN npm --save laravel-echo socket.io-client
 # CMD ["laravel-echo-server init"]
 # CMD ["laravel-echo-server start"]
+# RUN sysctl vm.overcommit_memory=1
 
 # install supervisor
 RUN apt-get update && apt-get install -y supervisor
