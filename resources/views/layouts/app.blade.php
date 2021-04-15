@@ -82,9 +82,16 @@
 
     <script src="{{ asset('js/app.js') }}"></script>
     <script>
+        var sock = io("ws://localhost:6001/socket.io/?EIO=4&transport=websocket");
+        sock.on('scrappedMessage:App\\Events\\ScrappedMessageEvent', function (data) {
+
+        console.log(data);
+        });
+    </script>
+    <script>
     console.log(Echo);
         Echo.channel('scrappedMessage')
-         .listen('.App\\Events\\ScrappedMessageEvent', (data) => {
+         .listen('ScrappedMessageEvent', (data) => {
              console.log(data);
             alert(data.message)
         });

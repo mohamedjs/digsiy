@@ -42,8 +42,10 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 
 #install larave-echo-server
-#RUN npm install
-RUN npm install -g laravel-echo-server
+# RUN npm install
+# RUN npm install -g laravel-echo-server
+
+# RUN npm install express socket.io socket.io-client laravel-echo ioredis dotenv --save
 
 # install requiremnt that needed to make realtime app
 # RUN npm install -g laravel-echo-server
