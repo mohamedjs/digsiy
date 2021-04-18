@@ -368,3 +368,27 @@ server is runing
   },
   socket: null
 }
+server is runing
+{
+  event: 'App\\Events\\ScrappedMessageEvent',
+  data: {
+    status: 'success',
+    message: 'Success Scrapped Website',
+    socket: null
+  },
+  socket: null
+}
+server is runing
+{
+  event: 'App\\Events\\ScrappedMessageEvent',
+  data: {
+    status: 'success',
+    message: 'Success Scrapped Website',
+    socket: null
+  },
+  socket: null
+}
+server is runing
+scrappedMessage {"event":"App\\Events\\ScrappedMessageEvent","data":{"status":"success","message":"Success Scrapped Website","socket":null},"socket":null}
+server is runing
+scrappedMessage {"event":"App\\Events\\ScrappedMessageEvent","data":{"status":"success","message":"Success Scrapped Website","socket":null},"socket":null}

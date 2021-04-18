@@ -37,6 +37,7 @@ services:
       - REDIS_REPLICATION_MODE=master
     depends_on:
       - nginx
+  
   db:
     image: mysql:latest
     container_name: db

@@ -10,9 +10,9 @@ var ioRedis = require('ioredis');
 var redis = new ioRedis(redisPort, redisHost);
 redis.subscribe('scrappedMessage');
 redis.on('message', function(channel, message) {
-    message = JSON.parse(message);
-    console.log(message);
-    io.emit(channel + ':' + message.event, message.data);
+    console.log(channel, message);
+    const event = JSON.parse(message);
+    io.emit(event.event, channel, event.data);
 });
 
 var broadcastPort = process.env.BROADCAST_PORT;
