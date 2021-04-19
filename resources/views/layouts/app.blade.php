@@ -84,8 +84,12 @@
     console.log(Echo);
         Echo.channel('scrappedMessage')
          .listen('ScrappedMessageEvent', (data) => {
-             console.log(data);
-            alert(data.message)
+             swal({
+              title: "Good job!",
+              text: data.message,
+              icon: data.status,
+              button: "GO!",
+            });
         });
     </script>
 </body>

@@ -1,183 +1,15 @@
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-Channel: scrappedMessage
-Event: App\Events\ScrappedMessageEvent
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-Channel: scrappedMessage
-Event: App\Events\ScrappedMessageEvent
-Channel: scrappedMessage
-Event: App\Events\ScrappedMessageEvent
-Channel: scrappedMessage
-Event: App\Events\ScrappedMessageEvent
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
-Channel: scrappedMessage
-Event: App\Events\ScrappedMessageEvent
-Channel: scrappedMessage
-Event: App\Events\ScrappedMessageEvent
-Channel: scrappedMessage
-Event: App\Events\ScrappedMessageEvent
-
-L A R A V E L  E C H O  S E R V E R
-
-version 1.6.2
-
-⚠ Starting server in DEV mode...
-
-✔  Running at localhost on port 6001
-✔  Channels are ready.
-✔  Listening for http events...
-✔  Listening for redis events...
-
-Server ready!
-
 internal/modules/cjs/loader.js:818
   throw err;
   ^
 
-Error: Cannot find module 'socket.io'
+Error: Cannot find module 'express'
 Require stack:
 - /var/www/html/server.js
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
     at Function.Module._load (internal/modules/cjs/loader.js:667:27)
     at Module.require (internal/modules/cjs/loader.js:887:19)
     at require (internal/modules/cjs/helpers.js:74:18)
-    at Object.<anonymous> (/var/www/html/server.js:3:10)
+    at Object.<anonymous> (/var/www/html/server.js:2:11)
     at Module._compile (internal/modules/cjs/loader.js:999:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
     at Module.load (internal/modules/cjs/loader.js:863:32)
@@ -190,14 +22,14 @@ internal/modules/cjs/loader.js:818
   throw err;
   ^
 
-Error: Cannot find module 'socket.io'
+Error: Cannot find module 'express'
 Require stack:
 - /var/www/html/server.js
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
     at Function.Module._load (internal/modules/cjs/loader.js:667:27)
     at Module.require (internal/modules/cjs/loader.js:887:19)
     at require (internal/modules/cjs/helpers.js:74:18)
-    at Object.<anonymous> (/var/www/html/server.js:3:10)
+    at Object.<anonymous> (/var/www/html/server.js:2:11)
     at Module._compile (internal/modules/cjs/loader.js:999:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
     at Module.load (internal/modules/cjs/loader.js:863:32)
@@ -210,14 +42,14 @@ internal/modules/cjs/loader.js:818
   throw err;
   ^
 
-Error: Cannot find module 'socket.io'
+Error: Cannot find module 'express'
 Require stack:
 - /var/www/html/server.js
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
     at Function.Module._load (internal/modules/cjs/loader.js:667:27)
     at Module.require (internal/modules/cjs/loader.js:887:19)
     at require (internal/modules/cjs/helpers.js:74:18)
-    at Object.<anonymous> (/var/www/html/server.js:3:10)
+    at Object.<anonymous> (/var/www/html/server.js:2:11)
     at Module._compile (internal/modules/cjs/loader.js:999:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
     at Module.load (internal/modules/cjs/loader.js:863:32)
@@ -230,14 +62,14 @@ internal/modules/cjs/loader.js:818
   throw err;
   ^
 
-Error: Cannot find module 'socket.io'
+Error: Cannot find module 'express'
 Require stack:
 - /var/www/html/server.js
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
     at Function.Module._load (internal/modules/cjs/loader.js:667:27)
     at Module.require (internal/modules/cjs/loader.js:887:19)
     at require (internal/modules/cjs/helpers.js:74:18)
-    at Object.<anonymous> (/var/www/html/server.js:3:10)
+    at Object.<anonymous> (/var/www/html/server.js:2:11)
     at Module._compile (internal/modules/cjs/loader.js:999:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
     at Module.load (internal/modules/cjs/loader.js:863:32)
@@ -246,149 +78,85 @@ Require stack:
   code: 'MODULE_NOT_FOUND',
   requireStack: [ '/var/www/html/server.js' ]
 }
-/var/www/html/server.js:20
-            console.log('Socket server is running.’);
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+server is runing
+/var/www/html/server.js:16
+    console.log(event.event, channel, event.data);
+                ^
 
-SyntaxError: Invalid or unexpected token
-    at wrapSafe (internal/modules/cjs/loader.js:915:16)
-    at Module._compile (internal/modules/cjs/loader.js:963:27)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
-    at Module.load (internal/modules/cjs/loader.js:863:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
-    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
-    at internal/main/run_main_module.js:17:47
-/var/www/html/server.js:20
-            console.log('Socket server is running.’);
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ReferenceError: Cannot access 'event' before initialization
+    at Redis.<anonymous> (/var/www/html/server.js:16:17)
+    at Redis.emit (events.js:314:20)
+    at DataHandler.handleSubscriberReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:80:32)
+    at DataHandler.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:47:18)
+    at JavascriptRedisParser.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:21:22)
+    at JavascriptRedisParser.execute (/var/www/html/node_modules/redis-parser/lib/parser.js:544:14)
+    at Socket.<anonymous> (/var/www/html/node_modules/ioredis/built/DataHandler.js:25:20)
+    at Socket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+server is runing
+server is runing
+/var/www/html/server.js:16
+    console.log(event.event, channel, event.data);
+                ^
 
-SyntaxError: Invalid or unexpected token
-    at wrapSafe (internal/modules/cjs/loader.js:915:16)
-    at Module._compile (internal/modules/cjs/loader.js:963:27)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
-    at Module.load (internal/modules/cjs/loader.js:863:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
-    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
-    at internal/main/run_main_module.js:17:47
-/var/www/html/server.js:20
-            console.log('Socket server is running.’);
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ReferenceError: Cannot access 'event' before initialization
+    at Redis.<anonymous> (/var/www/html/server.js:16:17)
+    at Redis.emit (events.js:314:20)
+    at DataHandler.handleSubscriberReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:80:32)
+    at DataHandler.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:47:18)
+    at JavascriptRedisParser.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:21:22)
+    at JavascriptRedisParser.execute (/var/www/html/node_modules/redis-parser/lib/parser.js:544:14)
+    at Socket.<anonymous> (/var/www/html/node_modules/ioredis/built/DataHandler.js:25:20)
+    at Socket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+server is runing
+/var/www/html/server.js:16
+    console.log(event.event, channel, event.data);
+                ^
 
-SyntaxError: Invalid or unexpected token
-    at wrapSafe (internal/modules/cjs/loader.js:915:16)
-    at Module._compile (internal/modules/cjs/loader.js:963:27)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
-    at Module.load (internal/modules/cjs/loader.js:863:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
-    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
-    at internal/main/run_main_module.js:17:47
-/var/www/html/server.js:20
-            console.log('Socket server is running.’);
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ReferenceError: Cannot access 'event' before initialization
+    at Redis.<anonymous> (/var/www/html/server.js:16:17)
+    at Redis.emit (events.js:314:20)
+    at DataHandler.handleSubscriberReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:80:32)
+    at DataHandler.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:47:18)
+    at JavascriptRedisParser.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:21:22)
+    at JavascriptRedisParser.execute (/var/www/html/node_modules/redis-parser/lib/parser.js:544:14)
+    at Socket.<anonymous> (/var/www/html/node_modules/ioredis/built/DataHandler.js:25:20)
+    at Socket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+server is runing
+/var/www/html/server.js:16
+    console.log(event.event, channel, event.data);
+                ^
 
-SyntaxError: Invalid or unexpected token
-    at wrapSafe (internal/modules/cjs/loader.js:915:16)
-    at Module._compile (internal/modules/cjs/loader.js:963:27)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
-    at Module.load (internal/modules/cjs/loader.js:863:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
-    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
-    at internal/main/run_main_module.js:17:47
+ReferenceError: Cannot access 'event' before initialization
+    at Redis.<anonymous> (/var/www/html/server.js:16:17)
+    at Redis.emit (events.js:314:20)
+    at DataHandler.handleSubscriberReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:80:32)
+    at DataHandler.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:47:18)
+    at JavascriptRedisParser.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:21:22)
+    at JavascriptRedisParser.execute (/var/www/html/node_modules/redis-parser/lib/parser.js:544:14)
+    at Socket.<anonymous> (/var/www/html/node_modules/ioredis/built/DataHandler.js:25:20)
+    at Socket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:272:9)
 server is runing
-server is runing
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
+App\Events\ScrappedMessageEvent scrappedMessage {
+  status: 'success',
+  message: 'Success Scrapped Website',
   socket: null
 }
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
-  socket: null
-}
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
-  socket: null
-}
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
-  socket: null
-}
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
-  socket: null
-}
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
-  socket: null
-}
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
-  socket: null
-}
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
+App\Events\ScrappedMessageEvent scrappedMessage {
+  status: 'success',
+  message: 'Success Scrapped Website',
   socket: null
 }
 server is runing
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
+App\Events\ScrappedMessageEvent scrappedMessage {
+  status: 'success',
+  message: 'Success Scrapped Website',
   socket: null
 }
-server is runing
-{
-  event: 'App\\Events\\ScrappedMessageEvent',
-  data: {
-    status: 'success',
-    message: 'Success Scrapped Website',
-    socket: null
-  },
-  socket: null
-}
-server is runing
-scrappedMessage {"event":"App\\Events\\ScrappedMessageEvent","data":{"status":"success","message":"Success Scrapped Website","socket":null},"socket":null}
-server is runing
-scrappedMessage {"event":"App\\Events\\ScrappedMessageEvent","data":{"status":"success","message":"Success Scrapped Website","socket":null},"socket":null}

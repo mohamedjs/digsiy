@@ -6,12 +6,15 @@ require('dotenv').config();
 
 var redisPort = process.env.REDIS_PORT;
 var redisHost = process.env.REDIS_HOST;
+
 var ioRedis = require('ioredis');
 var redis = new ioRedis(redisPort, redisHost);
+
 redis.subscribe('scrappedMessage');
+
 redis.on('message', function(channel, message) {
-    console.log(channel, message);
     const event = JSON.parse(message);
+    console.log(event.event, channel, event.data);
     io.emit(event.event, channel, event.data);
 });
 
