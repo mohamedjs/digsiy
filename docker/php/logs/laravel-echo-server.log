@@ -1,0 +1,6 @@
+server is runing
+App\Events\ScrappedMessageEvent scrappedMessage {
+  status: 'success',
+  message: 'Success Scrapped Website',
+  socket: null
+}

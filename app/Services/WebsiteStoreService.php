@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Repositories\WebsiteRepository;
 use App\Models\Website;
+use App\Jobs\ScrapedJob;
 
 class WebsiteStoreService
 {
@@ -46,7 +47,8 @@ class WebsiteStoreService
     {
         $request['last_scraped_at'] = date("Y-m-d H:i:s");
         $website = $this->websiteRepository->create($request);
-        $this->articleService->CreatArticleFromLink($request['link'],$website);
+        dispatch(new ScrapedJob($this->articleService, $request['link'], $website));
+        // $this->articleService->CreatArticleFromLink($request['link'],$website);
     	return $website;
     }
 

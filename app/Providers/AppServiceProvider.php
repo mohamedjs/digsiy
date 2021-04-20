@@ -3,6 +3,10 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\Queue;
+use Illuminate\Queue\Events\JobProcessed;
+use App\Events\ScrappedMessageEvent;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +17,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        Builder::macro('whereLike', function($attributes, string $searchTerm) {
+            $this->where(function($q) use ($attributes,$searchTerm){
+                foreach($attributes as $attribute) {
+                  $q->orWhere($attribute, 'LIKE', "%{$searchTerm}%");
+                }
+            });
+            return $this;
+        });
+
     }
 
     /**
@@ -23,6 +35,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Queue::after(function (JobProcessed $event) {
+            match ($event->job->resolveName()) {
+            "App\Jobs\ScrapedJob" => event(new ScrappedMessageEvent("success", "Success Scrapped Website")),
+            };
+        });
     }
 }
