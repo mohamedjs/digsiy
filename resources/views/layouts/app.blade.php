@@ -82,7 +82,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script>
     console.log(Echo);
-        Echo.channel('scrappedMessage')
+        Echo.private('scrappedMessage.{{ auth()?->user()?->id }}')
          .listen('ScrappedMessageEvent', (data) => {
              swal({
               title: "Good job!",
