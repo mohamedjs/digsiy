@@ -36,12 +36,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Queue::after(function (JobProcessed $event) {
-          switch ($event->job->resolveName()) {
-            case "App\Jobs\ScrapedJob":
-              event(new ScrappedMessageEvent("success", "Success Scrapped Website"));
-            default:
-              break;
-          }
+            match ($event->job->resolveName()) {
+            "App\Jobs\ScrapedJob" => event(new ScrappedMessageEvent("success", "Success Scrapped Website")),
+            };
         });
     }
 }

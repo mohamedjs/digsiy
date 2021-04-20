@@ -1,0 +1,3 @@
+[2021-04-20 09:09:14][pKSDL8x5pfVFc35oPfSuHoDl41VneHSi] Processing: App\Jobs\ScrapedJob
+[2021-04-20 09:09:24][pKSDL8x5pfVFc35oPfSuHoDl41VneHSi] Processed:  App\Jobs\ScrapedJob
+[2021-04-20 09:09:24][0ajKutMlJTIMDJSGfoEONE3YRTGCztew] Processing: App\Events\ScrappedMessageEvent

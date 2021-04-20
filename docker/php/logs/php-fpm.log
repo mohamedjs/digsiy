@@ -1,0 +1,6 @@
+[20-Apr-2021 09:08:53] NOTICE: fpm is running, pid 10
+[20-Apr-2021 09:08:53] NOTICE: ready to handle connections
+172.18.0.3 -  20/Apr/2021:09:09:05 +0000 "POST /index.php" 302
+172.18.0.3 -  20/Apr/2021:09:09:11 +0000 "GET /index.php" 200
+[20-Apr-2021 09:09:32] NOTICE: Terminating ...
+[20-Apr-2021 09:09:32] NOTICE: exiting, bye-bye!
