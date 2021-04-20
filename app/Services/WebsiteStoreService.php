@@ -11,22 +11,22 @@ class WebsiteStoreService
     /**
      * websiteRepository
      *
-     * @var App\Repositories\WebsiteRepository
+     * @var \App\Repositories\WebsiteRepository
      */
     private $websiteRepository;
 
     /**
      * articleService
      *
-     * @var App\Services\ArticleService
+     * @var \App\Services\ArticleService
      */
     private $articleService;
 
     /**
      * __construct
      *
-     * @param App\Repositories\WebsiteRepository $websiteRepository
-     * @param App\Services\ArticleService        $articleService
+     * @param \App\Repositories\WebsiteRepository $websiteRepository
+     * @param \App\Services\ArticleService        $articleService
      *
      * @return void
      */
@@ -41,14 +41,13 @@ class WebsiteStoreService
      *
      * @param array $request
      *
-     * @return App\Models\Website
+     * @return \App\Models\Website
      */
     public function handle($request): Website
     {
         $request['last_scraped_at'] = date("Y-m-d H:i:s");
         $website = $this->websiteRepository->create($request);
         dispatch(new ScrapedJob($this->articleService, $request['link'], $website));
-        // $this->articleService->CreatArticleFromLink($request['link'],$website);
     	return $website;
     }
 

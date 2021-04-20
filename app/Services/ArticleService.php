@@ -14,14 +14,14 @@ class ArticleService
     /**
      * articleRepository
      *
-     * @var App\Repositories\ArticleRepository
+     * @var \App\Repositories\ArticleRepository
      */
     private $articleRepository;
 
     /**
      * __construct
      *
-     * @param App\Repositories\ArticleRepository $articleRepository
+     * @param \App\Repositories\ArticleRepository $articleRepository
      * @return void
      */
     public function __construct(ArticleRepository $articleRepository)
@@ -33,7 +33,7 @@ class ArticleService
      * Creat Article From Link
      *
      * @param string             $request
-     * @param App\Models\Website $website
+     * @param \App\Models\Website $website
      *
      * @return void
      */
