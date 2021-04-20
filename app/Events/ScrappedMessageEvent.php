@@ -47,16 +47,18 @@ class ScrappedMessageEvent implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new Channel('scrappedMessage');
+        return new PrivateChannel('scrappedMessage.'.auth()->id());
     }
 
     /**
-     * The event's broadcast name.
+     * Handle a job failure.
      *
-     * @return string
+     * @param Exception $exception
+     *
+     * @return void
      */
-    // public function broadcastAs()
-    // {
-    //     return 'message';
-    // }
+    public function failed(\Throwable $exception)
+    {
+      \File::append(storage_path('logs') . '/' . basename(get_class($this)) . '.log', $exception->getMessage().PHP_EOL);
+    }
 }

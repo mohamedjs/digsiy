@@ -4,3 +4,70 @@ App\Events\ScrappedMessageEvent scrappedMessage {
   message: 'Success Scrapped Website',
   socket: null
 }
+server is runing
+server is runing
+Subscribed successfully! This client is currently subscribed to 1 channels.
+server is runing
+Subscribed successfully! This client is currently subscribed to 1 channels.
+undefined:1
+private-scrappedMessage.1
+^
+
+SyntaxError: Unexpected token p in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at Redis.<anonymous> (/var/www/html/server.js:27:24)
+    at Redis.emit (events.js:314:20)
+    at DataHandler.handleSubscriberReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:87:32)
+    at DataHandler.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:47:18)
+    at JavascriptRedisParser.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:21:22)
+    at JavascriptRedisParser.execute (/var/www/html/node_modules/redis-parser/lib/parser.js:544:14)
+    at Socket.<anonymous> (/var/www/html/node_modules/ioredis/built/DataHandler.js:25:20)
+    at Socket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:297:12)
+server is runing
+Subscribed successfully! This client is currently subscribed to 1 channels.
+undefined:1
+private-scrappedMessage.1
+^
+
+SyntaxError: Unexpected token p in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at Redis.<anonymous> (/var/www/html/server.js:27:24)
+    at Redis.emit (events.js:314:20)
+    at DataHandler.handleSubscriberReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:87:32)
+    at DataHandler.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:47:18)
+    at JavascriptRedisParser.returnReply (/var/www/html/node_modules/ioredis/built/DataHandler.js:21:22)
+    at JavascriptRedisParser.execute (/var/www/html/node_modules/redis-parser/lib/parser.js:544:14)
+    at Socket.<anonymous> (/var/www/html/node_modules/ioredis/built/DataHandler.js:25:20)
+    at Socket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:297:12)
+server is runing
+Subscribed successfully! This client is currently subscribed to 1 channels.
+server is runing
+Subscribed successfully! This client is currently subscribed to 1 channels.
+server is runing
+Subscribed successfully! This client is currently subscribed to 1 channels.
+*
+App\Events\ScrappedMessageEvent private-scrappedMessage.1 {
+  status: 'success',
+  message: 'Success Scrapped Website',
+  socket: null
+}
+*
+App\Events\ScrappedMessageEvent private-scrappedMessage.1 {
+  status: 'success',
+  message: 'Success Scrapped Website',
+  socket: null
+}
+*
+App\Events\ScrappedMessageEvent private-scrappedMessage.1 {
+  status: 'success',
+  message: 'Success Scrapped Website',
+  socket: null
+}
+*
+App\Events\ScrappedMessageEvent private-scrappedMessage.1 {
+  status: 'success',
+  message: 'Success Scrapped Website',
+  socket: null
+}

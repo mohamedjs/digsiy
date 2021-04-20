@@ -25,14 +25,14 @@ class ScrapedJob implements ShouldQueue
 
     /**
      * webiste
-     * 
+     *
      * @var App\Models\Website
      */
     private Website $website;
 
     /**
      * link
-     * 
+     *
      * @var string
      */
     private string $link;
@@ -62,7 +62,7 @@ class ScrapedJob implements ShouldQueue
         $this->articleService->CreatArticleFromLink($this->link, $this->website);
     }
 
-     /**
+    /**
      * Handle a job failure.
      *
      * @param Exception $exception
