@@ -3,7 +3,6 @@
 namespace App\Jobs;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
@@ -19,14 +18,14 @@ class ScrapedJob implements ShouldQueue
     /**
      * articleService
      *
-     * @var App\Services\ArticleService
+     * @var \App\Services\ArticleService
      */
     private ArticleService $articleService;
 
     /**
      * webiste
      *
-     * @var App\Models\Website
+     * @var \App\Models\Website
      */
     private Website $website;
 
@@ -40,9 +39,9 @@ class ScrapedJob implements ShouldQueue
     /**
      * Create a new job instance.
      *
-     * @param App\Services\ArticleService $articleService
+     * @param \App\Services\ArticleService $articleService
      * @param string $link
-     * @param App\Models\Website $website
+     * @param \App\Models\Website $website
      * @return void
      */
     public function __construct(ArticleService $articleService, string $link, Website $website)
@@ -65,7 +64,7 @@ class ScrapedJob implements ShouldQueue
     /**
      * Handle a job failure.
      *
-     * @param Exception $exception
+     * @param \Throwable $exception
      *
      * @return void
      */

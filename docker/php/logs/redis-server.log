@@ -87,3 +87,22 @@
 10:M 20 Apr 2021 13:03:53.543 * Saving the final RDB snapshot before exiting.
 10:M 20 Apr 2021 13:03:53.601 * DB saved on disk
 10:M 20 Apr 2021 13:03:53.602 # Redis is now ready to exit, bye bye...
+9:C 20 Apr 2021 13:15:42.984 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+9:C 20 Apr 2021 13:15:42.984 # Redis version=5.0.3, bits=64, commit=00000000, modified=0, pid=9, just started
+9:C 20 Apr 2021 13:15:42.984 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+9:M 20 Apr 2021 13:15:42.986 * Running mode=standalone, port=6379.
+9:M 20 Apr 2021 13:15:42.986 # Server initialized
+9:M 20 Apr 2021 13:15:42.986 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+9:M 20 Apr 2021 13:15:42.986 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+9:M 20 Apr 2021 13:15:42.988 * DB loaded from disk: 0.002 seconds
+9:M 20 Apr 2021 13:15:42.988 * Ready to accept connections
+9:M 20 Apr 2021 14:15:43.050 * 1 changes in 3600 seconds. Saving...
+9:M 20 Apr 2021 14:15:43.051 * Background saving started by pid 36
+36:C 20 Apr 2021 14:15:43.125 * DB saved on disk
+36:C 20 Apr 2021 14:15:43.126 * RDB: 6 MB of memory used by copy-on-write
+9:M 20 Apr 2021 14:15:43.151 * Background saving terminated with success
+9:signal-handler (1618929290) Received SIGTERM scheduling shutdown...
+9:M 20 Apr 2021 14:34:50.512 # User requested shutdown...
+9:M 20 Apr 2021 14:34:50.512 * Saving the final RDB snapshot before exiting.
+9:M 20 Apr 2021 14:34:50.572 * DB saved on disk
+9:M 20 Apr 2021 14:34:50.572 # Redis is now ready to exit, bye bye...

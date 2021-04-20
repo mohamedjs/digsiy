@@ -26,8 +26,9 @@ redis.psubscribe('*', (err, count) => {
 redis.on('pmessage', function(subscribed, channel, message) {
     console.log(subscribed);
     const event = JSON.parse(message);
-    console.log(event.event, channel, event.data);
     io.emit(event.event, channel, event.data);
+    console.log('Event: ' + event.event);
+    console.log('channel: ' + channel);
 });
 
 var broadcastPort = process.env.BROADCAST_PORT;

@@ -55,3 +55,6 @@
 [2021-04-20 12:46:02][9c5wI6FwnbQRmUUAkG7GepgNx1IGl6ba] Processing: App\Jobs\ScrapedJob
 [2021-04-20 12:46:13][9c5wI6FwnbQRmUUAkG7GepgNx1IGl6ba] Processed:  App\Jobs\ScrapedJob
 [2021-04-20 12:46:13][ZqQlqsoFBPWHfCr7njvox2hbsVeCM78E] Processing: App\Events\ScrappedMessageEvent
+[2021-04-20 13:43:56][vpGFMpcjtstdQhI3Cvo9y69I6mQ7SfDT] Processing: App\Jobs\ScrapedJob
+[2021-04-20 13:44:07][vpGFMpcjtstdQhI3Cvo9y69I6mQ7SfDT] Processed:  App\Jobs\ScrapedJob
+[2021-04-20 13:44:07][zoHCcat87h8BmCXFqHzbBXYINJeBaFQX] Processing: App\Events\ScrappedMessageEvent

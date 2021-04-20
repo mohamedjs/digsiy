@@ -30,7 +30,7 @@ class DomTypeStrategy
      *
      * @param string $link
      *
-     * @return array
+     * @return array [title, description, link, dom]
      */
     public function collectArticlesDataFromLink($link): array
     {

@@ -118,3 +118,22 @@
 2021-04-20 13:03:53,497 INFO stopped: laravel-worker_00 (exit status 0)
 2021-04-20 13:03:53,502 INFO stopped: php-fpm_00 (exit status 0)
 2021-04-20 13:03:53,602 INFO stopped: redis-server_00 (exit status 0)
+2021-04-20 13:15:41,964 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-04-20 13:15:41,965 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2021-04-20 13:15:41,972 INFO RPC interface 'supervisor' initialized
+2021-04-20 13:15:41,972 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-04-20 13:15:41,973 INFO supervisord started with pid 1
+2021-04-20 13:15:42,977 INFO spawned: 'redis-server_00' with pid 9
+2021-04-20 13:15:42,980 INFO spawned: 'php-fpm_00' with pid 10
+2021-04-20 13:15:42,982 INFO spawned: 'laravel-worker_00' with pid 11
+2021-04-20 13:15:42,985 INFO spawned: 'laravel-echo-server_00' with pid 12
+2021-04-20 13:15:43,990 INFO success: redis-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-20 13:15:43,990 INFO success: php-fpm_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-20 13:15:43,990 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-20 13:15:43,991 INFO success: laravel-echo-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-04-20 14:34:50,392 WARN received SIGQUIT indicating exit request
+2021-04-20 14:34:50,393 INFO waiting for redis-server_00, php-fpm_00, laravel-worker_00, laravel-echo-server_00 to die
+2021-04-20 14:34:50,400 INFO stopped: laravel-echo-server_00 (terminated by SIGTERM)
+2021-04-20 14:34:50,471 INFO stopped: laravel-worker_00 (exit status 0)
+2021-04-20 14:34:50,476 INFO stopped: php-fpm_00 (exit status 0)
+2021-04-20 14:34:50,573 INFO stopped: redis-server_00 (exit status 0)

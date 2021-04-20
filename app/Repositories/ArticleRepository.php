@@ -11,14 +11,14 @@ class ArticleRepository
     /**
      * article
      *
-     * @var App\Models\Article
+     * @var \App\Models\Article
      */
     private $article;
 
     /**
      * __construct
      *
-     * @param  Article $article
+     * @param  \App\Models\Article $article
      * @return void
      */
     public function __construct(Article $article)

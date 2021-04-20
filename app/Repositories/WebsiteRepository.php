@@ -11,14 +11,14 @@ class WebsiteRepository
     /**
      * website
      *
-     * @var App\Models\Website
+     * @var \App\Models\Website
      */
     private $website;
 
     /**
      * __construct
      *
-     * @param  Website $website
+     * @param \App\Models\Website $website
      * @return void
      */
     public function __construct(Website $website)

@@ -71,3 +71,9 @@ App\Events\ScrappedMessageEvent private-scrappedMessage.1 {
   message: 'Success Scrapped Website',
   socket: null
 }
+server is runing
+Subscribed successfully! This client is currently subscribed to 1 channels.
+*
+Event: App\Events\ScrappedMessageEvent
+channel: private-scrappedMessage.
+data: [object Object]
