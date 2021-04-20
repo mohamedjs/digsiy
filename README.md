@@ -17,7 +17,7 @@ docker-compose up -d --build
 git clone https://github.com/mohamedjs/digsiy.git  
 docker-compose exec php bash 
 composer install  
-npm i 
+npm i  
 npm run dev  
 php artisan migrate --seed  
 
