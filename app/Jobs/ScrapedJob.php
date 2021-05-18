@@ -10,6 +10,7 @@ use Illuminate\Queue\SerializesModels;
 use App\Services\ArticleService;
 use App\Models\Website;
 use App\Events\ScrappedMessageEvent;
+use App\Models\User;
 
 class ScrapedJob implements ShouldQueue
 {
@@ -37,18 +38,27 @@ class ScrapedJob implements ShouldQueue
     private string $link;
 
     /**
+     * user
+     *
+     * @var \App\Models\User
+     */
+    private User $user;
+
+    /**
      * Create a new job instance.
      *
      * @param \App\Services\ArticleService $articleService
      * @param string $link
      * @param \App\Models\Website $website
+     * @param \App\Models\User   $user
      * @return void
      */
-    public function __construct(ArticleService $articleService, string $link, Website $website)
+    public function __construct(ArticleService $articleService, string $link, Website $website, User $user)
     {
         $this->articleService = $articleService;
         $this->link           = $link;
         $this->website        = $website;
+        $this->user           = $user;
     }
 
     /**
@@ -59,6 +69,8 @@ class ScrapedJob implements ShouldQueue
     public function handle()
     {
         $this->articleService->CreatArticleFromLink($this->link, $this->website);
+        //save user that make this job to can
+        \Cache::add('user', $this->user, 60*60);
     }
 
     /**
@@ -71,7 +83,7 @@ class ScrapedJob implements ShouldQueue
     public function failed(\Throwable $exception)
     {
       \File::append(storage_path('logs') . '/' . basename(get_class($this)) . '.log', $exception->getMessage().PHP_EOL);
-      event(new ScrappedMessageEvent("failed", $exception->getMessage()));
+      event(new ScrappedMessageEvent("failed", $exception->getMessage(), $this->user));
     }
 
 }

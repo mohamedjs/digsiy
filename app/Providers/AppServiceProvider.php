@@ -7,9 +7,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Queue\Events\JobProcessed;
 use App\Events\ScrappedMessageEvent;
-use Illuminate\Queue\Events\JobFailed;
-use Illuminate\Support\Facades\Log;
-
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -47,9 +44,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+       $this->handleJobEvents();
+    }
+
+    private function handleJobEvents()
+    {
         Queue::after(function (JobProcessed $event) {
             match ($event->job->resolveName()) {
-                "App\Jobs\ScrapedJob" => event(new ScrappedMessageEvent("success", "Success Scrapped Website")),
+                "App\Jobs\ScrapedJob" => event(new ScrappedMessageEvent("success", "Success Scrapped Website", \Cache::get('user',auth()->user()))),
             };
         });
 

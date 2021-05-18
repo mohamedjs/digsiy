@@ -47,7 +47,7 @@ class WebsiteStoreService
     {
         $request['last_scraped_at'] = date("Y-m-d H:i:s");
         $website = $this->websiteRepository->create($request);
-        dispatch(new ScrapedJob($this->articleService, $request['link'], $website));
+        dispatch(new ScrapedJob($this->articleService, $request['link'], $website, auth()->user()));
     	return $website;
     }
 

@@ -51,8 +51,7 @@ class WebsiteUpdateService
 
         $website = tap($website)->update($request);
 
-        dispatch(new ScrapedJob($this->articleService, $website->link, $website));
-        // $this->articleService->CreatArticleFromLink($website->link, $website);
+        dispatch(new ScrapedJob($this->articleService, $website->link, $website, auth()->user()));
 
     	return $website;
     }
