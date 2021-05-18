@@ -36,7 +36,7 @@ class ArticleController extends Controller
      */
     public function index(Request $request): Renderable
     {
-        $articles = $this->articleRepository->query();
+        $articles = $this->articleRepository->with("website");
 
         if($request->filled("website_id")) {
             $articles = $articles->where("website_id", $request->website_id);

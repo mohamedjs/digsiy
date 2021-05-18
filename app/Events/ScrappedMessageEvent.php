@@ -2,12 +2,9 @@
 
 namespace App\Events;
 
-use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
-use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use Illuminate\Contracts\Broadcasting\ShouldBroadcastNow;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
@@ -30,14 +27,25 @@ class ScrappedMessageEvent implements ShouldBroadcast
     public $message;
 
     /**
-     * Create a new event instance.
+     * message
      *
-     * @return void
+     * @var \App\Models\User
      */
-    public function __construct($status, $message)
+    public $user;
+
+
+    /**
+     * Method __construct
+     *
+     * @param string $status
+     * @param string $message
+     * @param \App\Models\User $user
+     */
+    public function __construct(string $status, string $message, User $user)
     {
         $this->message = $message;
         $this->status  = $status;
+        $this->user    = $user;
     }
 
     /**
@@ -47,7 +55,7 @@ class ScrappedMessageEvent implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('scrappedMessage.'.auth()->id());
+        return new PrivateChannel('scrappedMessage.'.$this->user->id);
     }
 
     /**
